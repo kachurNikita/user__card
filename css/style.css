@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-black: #000;
+   --card-width: 300px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 14px;
+   color: lightgray;
+}
+
+ a {
+     text-decoration: none;
+     color:skyblue;
+ }
+
+.btn {
+    width: 150px;
+    max-width: 100%;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: inherit;
+    color: #87ceeb;
+    display: inline-block;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.btn:hover {
+    background-color: #87ceeb ;
+    transition: ease 0.5s;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00bfff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: var(--card-width);
+    display: flex;
+    height: calc(var(--card-width) * 1.8);
+    flex-direction: column;
+    text-align: center;
+    background-color:var(--color-black);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 0 15px 0;
+}
+
+.card__top {
+    object-fit: cover;
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card__user {
+    height: calc(var(--card-width) * 0.25);
+    width: calc(var(--card-width) * 0.25);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.card__position_title  {
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+.card__user_photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card__user_star {
+    left: 143px;
+    top: 23px;
+    position: absolute;;
+}
+
+.card__position {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.card__position_euro {
+    position: absolute;
+    left: 42px;
+    top: 25px;
+}
+
+.card__title {
+    margin: 10px 0 15px 0;
+    color: var(--color-black);
+}
+
+.card__text {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card__text_icon {
+    position: absolute;
+    top: -7px;
+    left: 55px;
+}
+
+.one {
+    margin-bottom: 10px;
+}
+
+.card__btns {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__btns .btn:first-child{
+    margin-bottom: 10px;
+}
+
+.card__status {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__status span {
+    margin: 7px 5px 0 0;
+    height: 5px;
+    width: 5px;
+    line-height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green;
+}
